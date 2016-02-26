@@ -1,0 +1,35 @@
+2016-02-22 09:38:49,973 INFO c.c.p.App [main] was geht ab 
+2016-02-22 09:38:50,008 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2016-02-22 09:38:50,144 WARN o.h.o.connections [main] HHH10001002: Using Hibernate built-in connection pool (not for production use!) 
+2016-02-22 09:39:14,816 INFO c.c.p.App [main] was geht ab 
+2016-02-22 09:39:14,850 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2016-02-22 09:39:14,985 WARN o.h.o.connections [main] HHH10001002: Using Hibernate built-in connection pool (not for production use!) 
+2016-02-22 09:39:15,797 DEBUG o.h.SQL [main] select amt0_.id as id1_0_0_, amt0_.bezeichnung as bezeichn2_0_0_, amt0_.kuerzel as kuerzel3_0_0_ from Amt amt0_ where amt0_.id=? 
+2016-02-22 09:39:15,816 DEBUG o.h.SQL [main] select mitglied0_.id as id1_1_0_, mitglied0_.geburtsdatum as geburtsd2_1_0_, mitglied0_.name as name3_1_0_, mitglied0_.ortfk as ortfk6_1_0_, mitglied0_.ortsektionfk as ortsekti7_1_0_, mitglied0_.strasse as strasse4_1_0_, mitglied0_.vorname as vorname5_1_0_, ort1_.id as id1_3_1_, ort1_.ort as ort2_3_1_, ort1_.plz as plz3_3_1_, ortsektion2_.id as id1_4_2_, ortsektion2_.ortfk as ortfk2_4_2_, ortsektion2_.parteiburofk as parteibu3_4_2_, ort3_.id as id1_3_3_, ort3_.ort as ort2_3_3_, ort3_.plz as plz3_3_3_, parteiburo4_.id as id1_5_4_, parteiburo4_.kanton as kanton2_5_4_ from Mitglied mitglied0_ left outer join Ort ort1_ on mitglied0_.ortfk=ort1_.id left outer join OrtSektion ortsektion2_ on mitglied0_.ortsektionfk=ortsektion2_.id left outer join Ort ort3_ on ortsektion2_.ortfk=ort3_.id left outer join ParteiBuro parteiburo4_ on ortsektion2_.parteiburofk=parteiburo4_.id where mitglied0_.id=? 
+2016-02-22 09:39:15,834 DEBUG o.h.SQL [main] insert into MitgliedAmt (wahlbis, wahldatum, amtfk, mitgliedfk) values (?, ?, ?, ?) 
+2016-02-26 08:35:17,447 INFO c.c.m.App [main] was geht ab 
+2016-02-26 08:48:45,605 INFO c.c.m.App [main] Hello World! 
+2016-02-26 08:48:45,699 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2016-02-26 08:48:53,119 INFO c.c.m.App [main] Hello World! 
+2016-02-26 08:48:53,157 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2016-02-26 08:48:53,481 WARN o.h.o.connections [main] HHH10001002: Using Hibernate built-in connection pool (not for production use!) 
+2016-02-26 08:50:30,636 INFO c.c.m.App [main] Hello World! 
+2016-02-26 08:50:30,670 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2016-02-26 08:50:30,811 WARN o.h.o.connections [main] HHH10001002: Using Hibernate built-in connection pool (not for production use!) 
+2016-02-26 08:58:25,113 INFO c.c.m.App [main] Hello World! 
+2016-02-26 08:58:25,146 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2016-02-26 08:58:25,288 WARN o.h.o.connections [main] HHH10001002: Using Hibernate built-in connection pool (not for production use!) 
+2016-02-26 08:58:26,114 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): ch.csbe.m153.model.TeilnehmerFragebogenFrageAntwort 
+2016-02-26 08:58:26,114 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): ch.csbe.m153.model.TeilnehmerFragebogenFrageAntwort 
+2016-02-26 08:59:23,165 INFO c.c.m.App [main] Hello World! 
+2016-02-26 08:59:23,201 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2016-02-26 08:59:23,344 WARN o.h.o.connections [main] HHH10001002: Using Hibernate built-in connection pool (not for production use!) 
+2016-02-26 08:59:23,969 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): ch.csbe.m153.model.TeilnehmerFragebogenFrageAntwort 
+2016-02-26 08:59:23,969 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): ch.csbe.m153.model.TeilnehmerFragebogenFrageAntwort 
+2016-02-26 08:59:23,969 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): ch.csbe.m153.model.FragebogenFrage 
+2016-02-26 08:59:23,970 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): ch.csbe.m153.model.FragebogenFrage 
+2016-02-26 08:59:23,970 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): ch.csbe.m153.model.FrageAntwort 
+2016-02-26 08:59:23,970 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): ch.csbe.m153.model.FrageAntwort 
+2016-02-26 08:59:24,568 DEBUG o.h.SQL [main] insert into teilnehmer (email, lieferzeit, name, vorname, zahlungsweise) values (?, ?, ?, ?, ?) 
+2016-02-26 09:39:07,424 INFO c.c.m.App [main] Hello World! 
+2016-02-26 10:32:36,543 INFO c.c.m.App [main] Hello World! 

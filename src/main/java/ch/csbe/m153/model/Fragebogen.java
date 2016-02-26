@@ -20,4 +20,33 @@ public class Fragebogen {
 	@Column(length=100,nullable=false)
 	private String name;
 	
+	public Fragebogen() {
+		super();
+	}
+	
+	public Fragebogen(Unternehmen unternehmen, String name) {
+		super();
+		this.unternehmen = unternehmen;
+		this.name = name;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Unternehmen getUnternehmen() {
+		return unternehmen;
+	}
+	public void setUnternehmen(Unternehmen unternehmen) {
+		this.unternehmen = unternehmen;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 }
